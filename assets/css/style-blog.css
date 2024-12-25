@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../image/Background.jpg');
+    text-align: center;
+    padding: 40px 0;
+    z-index: 1000;
+}
+
+.header-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.header h1 {
+    font-size: 150px;
+    color: #f1dc99;
+    margin: 0;
+    line-height: 1;
+    font-weight: 200;
+    font-family: 'Great Vibes';
+}
+
+.header p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-para {
+    margin-top: 10px;
+}
+
+.content-titre {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 300px; /* Définir la hauteur fixe selon vos besoins */
+    object-fit: cover; /* L'image sera recadrée pour remplir l'espace défini */
+    display: block;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 0;
+    color: #333;
+    padding: 0 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #f1dc99;
+    cursor: pointer;
+}
+
+.card:hover img {
+    transform: translateY(-5px);
+}
+
+.card:hover h2 {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: #073335; /* Couleur de fond vert */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-text p {
+    margin: 0;
+    color: #f1dc99; /* Couleur du texte */
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-text a {
+    color: #f1dc99; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+}
+
+.footer-text a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}
